@@ -94,7 +94,7 @@ const object = <I, E, O>(
 
 const succeed = <I, E, O>(v: O): Parser<I, E, O> => custom((_) => ok(v));
 
-const fail = <I, E, O>(e: E): Parser<I, E, O> => custom((_) => err([e]));
+const fail = <I, E, O>(...e: E[]): Parser<I, E, O> => custom((_) => err(e));
 
 const string = <I, E>(e: E): Parser<I, E, string> =>
   custom((v) => typeof v === "string" ? ok(v) : err([e]));
