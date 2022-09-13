@@ -1,6 +1,6 @@
 ## Incy 
 
-An __incy wincy__ [parsing](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/) library for Typescript.
+An __incy wincy__ [parsing](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/) library for [Deno](https://deno.land/).
 
 - Small (> 200 LOC) 
 - Dependency Free
